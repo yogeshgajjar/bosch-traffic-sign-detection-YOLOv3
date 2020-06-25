@@ -1,0 +1,15 @@
+[submodule "bosch"]
+	path = bosch
+	url = git@github.com:bosch-ros-pkg/bstld.git
+[submodule "bstld"]
+	path = bstld
+	url = git@github.com:bosch-ros-pkg/bstld.git
+[submodule "Traffic-light-detection-with-YOLOv3-BOSCH-traffic-light-dataset"]
+	path = Traffic-light-detection-with-YOLOv3-BOSCH-traffic-light-dataset
+	url = git@github.com:berktepebag/Traffic-light-detection-with-YOLOv3-BOSCH-traffic-light-dataset.git
+[submodule "yolov3/darknet"]
+	path = yolov3/darknet
+	url = git@github.com:pjreddie/darknet.git
+[submodule "darknet"]
+	path = darknet
+	url = git@github.com:pjreddie/darknet.git
