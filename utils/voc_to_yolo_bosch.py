@@ -10,7 +10,7 @@ from os.path import join
 import sys
 
 sets=['traffic_lights']
-labels = ["RedLeft", "Red", "RedRight", "GreenLeft", "Green", "GreenRight", "Yellow", "off"]
+labels = ["red_left", "red", "red_right", "green_left", "green", "green_right", "yellow", "off"]
 
 def convert(size, box):
     """
