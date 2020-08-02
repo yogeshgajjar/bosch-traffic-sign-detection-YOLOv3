@@ -2,12 +2,15 @@
 
 Traffic Sign Detection on Bosch Small Traffic Sign Detection dataset using Yolov3-tiny trained on Jetson Xavier
 
+![Original](detection1.png)
+
 ## Bosch Small Traffic Sign Dataset
 
 This dataset contains 13427 camera images at a resolution of 1280x720 pixels and contains about 24000 annotated traffic lights. The annotations include bounding boxes of traffic lights as well as the current state (active light) of each traffic light.
 The camera images are provided as raw 12bit HDR images taken with a red-clear-clear-blue filter and as reconstructed 8-bit RGB color images. The RGB images are provided for debugging and can also be used for training. However, the RGB conversion process has some drawbacks. Some of the converted images may contain artifacts and the color distribution may seem unusual.
 
 Dataset specifications:
+
 Training set:
 - 5093 images
 - Annotated about every 2 seconds
