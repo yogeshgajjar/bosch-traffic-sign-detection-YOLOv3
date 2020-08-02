@@ -1,6 +1,6 @@
 # BOSCH Traffic Sign Detection using YOLOv3
 
-Traffic Sign Detection on Bosch Small Traffic Sign Detection dataset using Yolov3-tiny trained on Jetson Xavier
+Traffic Sign Detection on Bosch Small Traffic Sign Detection dataset using Yolov3-tiny trained on Jetson TX2
 
 **[Link](https://www.youtube.com/watch?v=EjTc_iV5x2A&t=97s) to the video**
 
