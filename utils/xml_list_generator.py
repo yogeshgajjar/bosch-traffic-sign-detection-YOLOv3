@@ -1,30 +1,43 @@
+"""
+Copyright © 2020 Yogesh Gajjar. All rights reserved.
+"""
+
 import os
 import sys
 
-xmls_path = sys.argv[1] #xml files path
 
-xml_files = []
+def combine_xmls(xmls_path):
+	"""
+	This function reads the .xml file and converts into a form requried
+	for training.
 
-#r = root, d = directories, f = xml_files
+	args:
+		1. xmls_path : The .xml file path
 
-for r,d,f in os.walk(xmls_path):
-	for file in f:
-		if '.xml' in file:
-			xml_files.append(os.path.join(r, file)) #Gets the whole file xmls_path
-			#xml_files.append(os.path.splitext(file)[0]) # Gets only the name of the file without extension,path etc.	
+	"""
+	xml_files = []
+	for r,d,f in os.walk(xmls_path):
+		#r = root, d = directories, f = xml_files
+		for file in f:
+			if '.xml' in file:
+				xml_files.append(os.path.join(r, file)) #Gets the whole file xmls_path
 
-file_num = len(xml_files)
-print("Length of the .xml xml_files: ", file_num)
+	file_num = len(xml_files)
+	print("Length of the xml_files: ", file_num)
 
-if not open('bosch_traffic_light_xmls_list.txt','w'):
-	os.makefile('bosch_traffic_light_xmls_list.txt')
+	if not open('traffic_lights_xmls.txt','w'):
+		os.makefile('traffic_lights_xmls.txt')
 
-labels = open('bosch_traffic_light_xmls_list.txt','w')
+	labels = open('traffic_lights_xmls.txt','w')
 
-for xml in xml_files:
-	labels.write(xml + '\n')
+	for xml in xml_files:
+		labels.write(xml + '\n')
 
-labels.close()
+	labels.close()
 
-#for f in xml_files:
-	#print(f)
+def main():
+	xmls_path = sys.argv[1] #xml files path
+	combine_labels(xmls_path)
+
+if __name__ == '__main__':
+    main()
