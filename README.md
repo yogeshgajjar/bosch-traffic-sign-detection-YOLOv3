@@ -4,6 +4,8 @@ Traffic Sign Detection on Bosch Small Traffic Sign Detection dataset using Yolov
 
 ![Original](detection1.png)
 
+**[Link](https://www.youtube.com/watch?v=EjTc_iV5x2A&t=97s) to the video**
+
 ## Bosch Small Traffic Sign Dataset
 
 This dataset contains 13427 camera images at a resolution of 1280x720 pixels and contains about 24000 annotated traffic lights. The annotations include bounding boxes of traffic lights as well as the current state (active light) of each traffic light.
