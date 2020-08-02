@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 """
 This script Converts Yaml annotations to Pascal .xml Files
-of the Bosch Small Traffic Lights Dataset.
+of the Bosch Small Traffic Lights Dataset. This code is provided by 
+https://github.com/bosch-ros-pkg/bstld.git
 Example usage:
     python bosch_to_pascal.py input_yaml out_folder
 """
@@ -16,6 +17,7 @@ import xml.etree.cElementTree as ET
 
 def write_xml(savedir, image, imgWidth, imgHeight,
               depth=3, pose="Unspecified"):
+
 
     boxes = image['boxes']
     impath = image['path']
