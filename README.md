@@ -1,4 +1,4 @@
-# traffic-sign-detection
+# BOSCH Traffic Sign Detection using YOLOv3
 
 Traffic Sign Detection on Bosch Small Traffic Sign Detection dataset using Yolov3-tiny trained on Jetson Xavier
 
@@ -38,7 +38,7 @@ This repository requires the following dependencies and dataset
 
 After being unzipped, all the image files will reside in multiple folders. Copy or move all the images from different folders to one single folder as it get's easy to manipulate. The images contains the frame at 10th second in the corresponding video.
 
-Create a new folder under rgb/train and rename it as rgb/train/traffic_light_images.  
+Create a new folder under ```rgb/train``` and rename it as ```rgb/train/traffic_light_images```.  
 
 ## Steps to build
 
