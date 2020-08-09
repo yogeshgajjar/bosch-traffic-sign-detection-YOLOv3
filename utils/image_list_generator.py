@@ -37,8 +37,8 @@ def combine_images(img_path):
 	labels.close()
 
 def main():
-	image_path = sys.argv[1] #xml files path
-	combine_labels(image_path)
+	image_path = sys.argv[1] #image files path
+	combine_images(image_path)
 
 if __name__ == '__main__':
     main()
